@@ -2,20 +2,20 @@
 # from odoo import http
 
 
-# class ProyectoOdoo(http.Controller):
-#     @http.route('/proyecto_odoo/proyecto_odoo/', auth='public')
+# class Tiendas(http.Controller):
+#     @http.route('/tiendas/tiendas/', auth='public')
 #     def index(self, **kw):
 #         return "Hello, world"
 
-#     @http.route('/proyecto_odoo/proyecto_odoo/objects/', auth='public')
+#     @http.route('/tiendas/tiendas/objects/', auth='public')
 #     def list(self, **kw):
-#         return http.request.render('proyecto_odoo.listing', {
-#             'root': '/proyecto_odoo/proyecto_odoo',
-#             'objects': http.request.env['proyecto_odoo.proyecto_odoo'].search([]),
+#         return http.request.render('tiendas.listing', {
+#             'root': '/tiendas/tiendas',
+#             'objects': http.request.env['tiendas.tiendas'].search([]),
 #         })
 
-#     @http.route('/proyecto_odoo/proyecto_odoo/objects/<model("proyecto_odoo.proyecto_odoo"):obj>/', auth='public')
+#     @http.route('/tiendas/tiendas/objects/<model("tiendas.tiendas"):obj>/', auth='public')
 #     def object(self, obj, **kw):
-#         return http.request.render('proyecto_odoo.object', {
+#         return http.request.render('tiendas.object', {
 #             'object': obj
 #         })
